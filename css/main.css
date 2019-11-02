@@ -27,22 +27,33 @@ ul {
 }
 
 li {
+  list-style: none;
   padding:1em;
   flex:1;
+  padding:0.5em;
+  margin:0.5em;
 }
 
-a {
+.navigation {
   text-decoration: none;
   color: #7B8C00;
 }
 
-a:hover, a:focus, a:active {
+.navigation:hover, .navigation:focus, .navigation:active {
   color: #C9C937;
 }
 
 header {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -75,7 +86,6 @@ h2 {
 }
 
 h3 {
-  display: inline;
   font-size: 1.5em;
   color: #7B8C00;
 
@@ -187,6 +197,55 @@ img {
   margin: 1em;
 }
 
+code {
+  display: inline-block;
+  background-color: lightgrey;
+  padding:2em;
+  line-height: 2em;
+  font-size: 1.25em;
+}
+
+.project-container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-thumbnail {
+  width:75%;
+  transition-duration: 1s;
+  margin:1em;
+}
+
+.project-thumbnail:hover, .project-thumbnail:focus, .project-thumbnail:active {
+  filter: brightness(50%);
+}
+
+.intext-link {
+  text-decoration: none;
+  color: #E45F00;
+}
+
+.intext-link:hover, .intext-link:focus, .intext-link:active {
+  color: #FF8500;
+}
+
+.details {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  background-color: #E45F00;
+  padding:0.5em;
+  font-size: 1.25em;
+  transition-duration: 0.4s;
+}
+
+.details:hover, .details:focus, .details:active {
+  border: 2px solid #E45F00;
+  color: #E45F00;
+  background-color: white;
+}
+
 #combined {
   margin: 1em;
 }
@@ -201,6 +260,17 @@ img {
     flex:25%;
     max-width: 25%;
     margin:0.15em;
+  }
+
+  .project-thumbnail {
+    width:50%;
+  }
+
+}
+
+@media screen and (min-width: 50em) {
+  .project-thumbnail {
+    width:33.33%;
   }
 
 }
