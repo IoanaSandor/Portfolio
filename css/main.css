@@ -1,0 +1,182 @@
+/* ------------------------------- MAIN STYLING ----------------------------- */
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+  background-color: white;
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #757575;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding:0.5em;
+  margin:0.5em;
+}
+
+.nav-div {
+  color: #7B8C00;
+}
+
+li {
+  padding:1em;
+  flex:1;
+}
+
+a {
+  text-decoration: none;
+  color: #7B8C00;
+}
+
+a:hover, a:focus, a:active {
+  color: #C9C937;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-weight: lighter;
+  font-size: 4em;
+  color: #E45F00;
+  margin: 0;
+  padding:0.25em;
+}
+
+#branding {
+  margin: 1em;
+}
+
+h2 {
+  font-family: 'Sacramento', cursive;
+  font-weight: lighter;
+  font-size: 2.5em;
+  color: #FF8500;
+  margin: 1em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+h3 {
+  display: inline;
+  font-size: 1.5em;
+  color: #7B8C00;
+
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+.fonts {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonts-row-1 {
+  flex:1;
+  display:flex;
+  align-items: center;
+}
+
+.fonts-row-2 {
+  flex:1;
+  display:flex;
+  margin-bottom: 2em;
+}
+
+.sacramento {
+  font-family: 'Sacramento', cursive;
+  font-weight: lighter;
+  font-size: 2.5em;
+  text-decoration: none;
+  flex:1;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  text-decoration: none;
+  flex:1;
+}
+
+.fonts-desc {
+  flex: 1;
+}
+
+
+.colors {
+  display: flex;
+  flex-direction: column;
+}
+
+.colors-row-1 {
+  margin-top: 2em;
+  flex:1;
+  display:flex;
+  align-items: center;
+}
+
+.colors-row-2 {
+  flex:1;
+  display:flex;
+  align-items: center;
+}
+
+.colors-row-3 {
+  flex:1;
+  display:flex;
+  align-items: center;
+}
+
+.colors-row-4 {
+  flex:1;
+  display:flex;
+  align-items: center;
+}
+
+.colors-row-5 {
+  flex:1;
+  display:flex;
+  align-items: center;
+}
+
+.color-palette {
+  max-width: 40%;
+  margin: 4%;
+}
+
+
+img {
+  width:100%;
+}
+
+
+@media screen and (min-width: 35em) {
+
+  .fonts-desc {
+    flex: 3;
+  }
+
+  .color-palette {
+    max-width: 20%;
+  }
+
+}
