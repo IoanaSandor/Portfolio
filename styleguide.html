@@ -28,11 +28,11 @@
     <h1>style guide</h1>
 
     <ul>
-      <li><a class="navigation" href="#branding">branding</a></li>
-      <p class="nav-div"> | </p>
-      <li><a class="navigation" href="#elements">single elements</a></li>
-      <p class="nav-div"> | </p>
-      <li><a class="navigation" href="#combined">combined elements</a></li>
+      <li><a class="navigation" href="home.html">home</a></li>
+      <li><p class="nav-div"> | </p></li>
+      <li><a class="navigation" href="work.html">work</a></li>
+      <li><p class="nav-div"> | </p></li>
+      <li><a class="navigation" href="about.html">about</a></li>
     </ul>
 
   </header>
@@ -142,7 +142,7 @@
         <h4>Sample Code:</h4>
           <code>&#60;li&#62;<br>&nbsp;&nbsp;&nbsp;&nbsp;&#60;a class="navigation" href="#branding"&#62;back to the top&#60;/a&#62;<br>&#60;/li&#62;</code>
         <h4>Rendered Element:</h4>
-        <li><a class="navigation" href="#branding">back to the top</a></li>
+        <a class="navigation" href="#branding">back to the top</a>
 
       <h3>Image Link</h3>
         <h4>CSS Selector:</h4>
@@ -188,19 +188,21 @@
           <code>
             &#60;div class="nav-container"&#62;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&#60;ul&#62;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;a class="navigation" href="#branding"&#62;branding&#60;/a&#62;&#60;/li&#62;
-              &#60;p class="nav-div"&#62; | &#60;/p&#62;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;a class="navigation" href="#elements"&#62;single elements&#60;/a&#62;&#60;/li&#62;
-              &#60;p class="nav-div"&#62; | &#60;/p&#62;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;li>&#60;a class="navigation" href="#combined">combined elements&#60;/a>&#60;/li><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;a class="navigation" href="#branding"&#62;branding&#60;/a&#62;&#60;/li&#62;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;p class="nav-div"&#62; | &#60;/p&#62;&#60;/li&#62;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;a class="navigation" href="#elements"&#62;single elements&#60;/a&#62;&#60;/li&#62;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;p class="nav-div"&#62; | &#60;/p&#62;&#60;/li&#62;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;li>&#60;a class="navigation" href="#combined">combined elements&#60;/a&#62;/li&#62;<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&#60;/ul&#62;<br>
           &#60;/div&#62;
         </code>
         <h4>Rendered Element:</h4>
         <div class="nav-container">
           <ul>
-            <li><a class="navigation" href="#branding">branding</a></li> <p class="nav-div"> | </p>
-            <li><a class="navigation" href="#elements">single elements</a></li> <p class="nav-div"> | </p>
+            <li><a class="navigation" href="#branding">branding</a></li>
+            <li><p class="nav-div"> | </p></li>
+            <li><a class="navigation" href="#elements">single elements</a></li>
+            <li><p class="nav-div"> | </p></li>
             <li><a class="navigation" href="#combined">combined elements</a></li>
           </ul>
         </div>
