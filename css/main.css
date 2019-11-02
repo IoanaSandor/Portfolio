@@ -169,14 +169,38 @@ img {
 }
 
 
+.mood-grid {
+  display: flex;
+
+
+  height: 100%;
+  justify-content: center;
+}
+
+.mood-col {
+  flex:50%;
+  max-width: 35%;
+  margin:0.15em;
+}
+
+#elements {
+  margin: 1em;
+}
+
+#combined {
+  margin: 1em;
+}
+
 @media screen and (min-width: 35em) {
 
   .fonts-desc {
     flex: 3;
   }
 
-  .color-palette {
-    max-width: 20%;
+  .mood-col {
+    flex:25%;
+    max-width: 25%;
+    margin:0.15em;
   }
 
 }
