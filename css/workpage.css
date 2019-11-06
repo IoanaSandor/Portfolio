@@ -1,0 +1,87 @@
+/* ------------------------------- WORK STYLING ----------------------------- */
+
+.work-grid {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.work-col {
+  flex:50%;
+  max-width: 35%;
+  margin:0.25em;
+}
+
+.project-thumbnail {
+  width:100%;
+  transition-duration: 1s;
+  margin:0.25em;
+}
+
+.intro-container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 56.25% 0 0 0;
+  position:relative;
+  margin: 0.5em;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.info {
+  margin:1em;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  color: #7B8C00;
+  text-decoration: none;
+  margin-top: 1em;
+}
+
+.process-desc{
+  flex:1;
+  min-width: 15em;
+}
+
+.process-img {
+  flex:1;
+}
+
+@media screen and (min-width: 35em) {
+
+  .video-container {
+    margin: 1em;
+  }
+}
+
+
+@media screen and (min-width: 50em) {
+  .work-grid {
+    width: 75%;
+    justify-content: center;
+    margin-left: 12.5%;
+  }
+
+  .video-container {
+    margin-top: 0;
+    padding: 0 0 32.5% 0;
+  }
+
+}
