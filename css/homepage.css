@@ -1,18 +1,62 @@
+.intro-container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .video-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-.details {
-  margin: 1em;
+  padding: 56.25% 0 0 0;
+  position:relative;
+  margin: 0.5em;
 }
 
 iframe {
-  width: 95%;
-  height: 550px;
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+
+.details {
+  margin: 2em;
+}
+
+.featured-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:1em;
+  margin-top: 3em;
+
+}
+
+.featured-col {
+  display:flex;
+  flex-direction: column;
+  flex:50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+  width:100%;
+}
+
+.project-thumbnail {
+  width:100%;
+  margin:0.5em;
+}
+
+h2 {
+  color: #7B8C00;
+  text-decoration: none;
+  margin-top: 3em;
 }
 
 #about {
@@ -29,78 +73,26 @@ iframe {
 }
 
 .profile-picture {
-  display: none;
 }
 
 @media screen and (min-width: 35em) {
-  #about {
-    flex-direction: row;
-  }
 
-  .profile-picture {
-    display: flex;
-    flex: 1;
-    max-width: 45%;
-  }
-
-  .desc {
-    flex: 1;
-    text-align: left;
-    margin: 2em;
+  .video-container {
+    margin: 1em;
   }
 }
 
-@media screen and (min-width: 35em) {
-  #about {
-    flex-direction: row;
-  }
+  @media screen and (min-width: 55em) {
 
-  .profile-picture {
-    display: flex;
-    flex: 1;
-    max-width: 45%;
-  }
+    .video-container {
+      margin-top: 0;
+      padding: 0 0 32.5% 0;
+    }
 
-  .desc {
-    flex: 1;
-    text-align: left;
-    margin: 2em;
-  }
-}
+    .featured-grid {
+      width: 50%;
+      justify-content: center;
+      margin-left: 25%;
+    }
 
-@media screen and (min-width: 35em) {
-  #about {
-    flex-direction: row;
-  }
-
-  .profile-picture {
-    display: flex;
-    flex: 1;
-    max-width: 45%;
-  }
-
-  .desc {
-    flex: 1;
-    text-align: left;
-    margin: 2em;
-  }
-}
-
-@media screen and (min-width: 60em) {
-  #about {
-    flex-direction: row;
-    padding: 10em;
-  }
-
-  .profile-picture {
-    display: flex;
-    flex: 1;
-    max-width: 40%;
-  }
-
-  .desc {
-    flex: 1;
-    text-align: left;
-    margin: 3em;
-  }
 }
