@@ -1,0 +1,116 @@
+<!--////////////////////////// WORK 01 PAGE /////////////////////////////////-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- charset used for character encoding -->
+  <meta charset="utf-8">
+  <!-- content, and initial-scale used for mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BB8 Animation</title>
+
+  <!-- Style sheet links -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/workpage.css" rel="stylesheet">
+
+  <!-- These two lines import the fonts from google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>bb8 animation</h1>
+
+    <ul>
+      <li><a class="navigation" href="index.html">home</a></li>
+      <li><p class="nav-div"> | </p></li>
+      <li><a class="navigation" href="work.html">work</a></li>
+      <li><p class="nav-div"> | </p></li>
+      <li><a class="navigation" href="about.html">about</a></li>
+    </ul>
+
+  </header>
+
+  <div class="intro-container">
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/370461548?color=FF8500&title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="work-desc">
+      <div class="specs">
+        <p><b>Type:</b> Personal Project<br><br>
+            <b>Role:</b> Ideation, sketching, modeling, texturing, rigging, animation, lighting, rendering <br><br>
+            <b>Tools:</b> ZBrush, 3D Coat, 3Ds Max, Photoshop, After Effects</p>
+      </div>
+      <p class="nav-div mini"> | </p>
+      <div class="summary">
+        <p>I wanted to make a small project that would allow me to focus on each aspect of the animation pipeline. Because the character and its animation were so simple, I was able to really focus on a clean execution and add all the details I wanted.</p>
+      </div>
+    </div>
+   </div>
+
+   <h2>process</h2>
+   <div class="info">
+     <p class="process-desc">I started by looking up reference images of BB8 and implementing a recognizable design at a cupcake. It was a bit difficult to integrate his spherical bottom to fit well with the cupcake base, so designs 2, 3, and 4 were not preferable. I added some whipped creme to make it look more like a cupcake; however, in design 5, it was too tall, so I removed the sphere bottom entirely and ended up with design 1. </p>
+     <img class="process-img" src="img/bb8/sketches.png" title="Process Sketches" alt="5 process sketches of the BB8 cupcake design">
+    </div>
+    <div class="info">
+      <p class="process-desc">I began modeling the design. I started in ZBrush and then retopologized it in 3D Coat, then finally, I textured it in 3DsMax. </p>
+      <div class="img-row">
+        <img class="process-img-02" src="img/bb8/ZBrush.png" title="Sculpting" alt="A ZBrush sculpt of BB8">
+        <img class="process-img-02" src="img/bb8/retop.png" title="Retopology" alt="A retopologized BB8">
+        <img class="process-img-02" src="img/bb8/texture.png" title="Texture" alt="A textured BB8">
+      </div>
+   </div>
+   <div class="info">
+     <p class="process-desc">Afterwards, I added a background to help ground the character.</p>
+     <div class="img-row-02">
+       <img class="process-img-03" src="img/bb8/background02.png" title="Background Placement" alt="A curved plane with lighting and a camera">
+       <img class="process-img-03" src="img/bb8/background.png" title="Preview" alt="A preview of BB8 on a lit teal background">
+     </div>
+  </div>
+  <div class="info">
+    <p class="process-desc">After everything was textured and lit, I started on the rough animation.</p>
+    <!-- Add video here -->
+ </div>
+
+<h2>final thoughts</h2>
+<div class="info">
+  <p class="process-desc">The main issues I faced when creating this character was trying to figure out how I would texture the “whipped creme” part of his body. I knew that BB8’s patterns were a little more detailed and had a specific shape that would  get warped if I simply flattened his UV’s. To solve this I mapped his UV’s by the “front” and “back” normals. Because I knew the camera would not be moving, I was able to simply project the texture onto the UVs without worrying about the deformation showing from other angles.</p>
+  <img class="process-img" src="img/bb8/uv.png" title="UV Projections" alt="Front and Back Normals for a UV projection">
+ </div>
+
+ <div class="info">
+   <p class="process-desc">I really wanted to focus on getting a clean motion with this animation. This was my first clean attempt while working with animation curves not only for the rotation and translation parameters, but also for the scaling ones as well. I believe that I accomplished several animation principles such as stretch and squash, follow through and overlapping actions, and anticipation. I hope to improve and include more principles within my animation work.</p>
+  </div>
+
+  <br>
+  <br>
+
+  <footer>
+    <h3 class="social-media-title">you can find me here:</h3>
+    <div class="test">
+      <div class="social-media">
+        <a href="index.html" class="social-media-item">
+          <img class="icon" src="img/icons/email_trans.png" title="Email" alt="An Email icon">
+        </a>
+        <a href="index.html" class="social-media-item">
+          <img class="icon" src="img/icons/twitter_trans.png" title="Twitter" alt="A Twitter icon">
+        </a>
+        <a href="index.html" class="social-media-item">
+          <img class="icon" src="img/icons/insta_trans.png" title="Instagram" alt="An Instagram icon">
+        </a>
+        <a href="index.html" class="social-media-item">
+          <img class="icon" src="img/icons/facebook_trans.png" title="Facebook" alt="A Facebook icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
