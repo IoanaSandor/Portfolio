@@ -18,8 +18,9 @@
   margin:0.25em;
 }
 
+/* ------------------------------ WORK 0n STYLING --------------------------- */
+
 .intro-container {
-  text-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -43,10 +44,33 @@ iframe {
   height:100%;
 }
 
+.work-desc {
+  margin: 3em;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specs {
+  flex:1;
+  max-width: 30em;
+}
+
+.mini {
+  display: none;
+}
+
+.summary {
+  flex:1;
+  max-width: 30em;
+}
+
+
 .info {
-  margin:1em;
-  display: inline-flex;
-  flex-wrap: wrap;
+  margin:3em;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -57,12 +81,40 @@ h2 {
 
 .process-desc{
   flex:1;
-  min-width: 15em;
 }
 
 .process-img {
-  flex:1;
+  flex: 1;
 }
+
+.img-row {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+}
+
+.process-img-02 {
+  flex:1;
+  width:33.33%;
+}
+
+.img-row-02 {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+}
+
+.process-img-03 {
+  flex:1;
+  width:60%;
+}
+
+.process-img-03-1 {
+  flex:1;
+  width:40%;
+}
+
+
 
 @media screen and (min-width: 35em) {
 
@@ -79,9 +131,32 @@ h2 {
     margin-left: 12.5%;
   }
 
+  .work-desc {
+    flex-direction: row;
+  }
+
+  .specs {
+    margin-right: 3em;
+  }
+
+  .mini {
+    display: inline-block;
+  }
+
+  .summary {
+    margin-left: 3em;
+  }
+
   .video-container {
     margin-top: 0;
     padding: 0 0 32.5% 0;
   }
 
+}
+
+@media screen and (min-width: 80em) {
+
+  .info {
+    flex-direction: row;
+  }
 }
