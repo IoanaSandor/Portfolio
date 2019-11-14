@@ -1,0 +1,16 @@
+$yellow: #FFFEAB;
+
+$black: #000000;
+
+@mixin newStyle {
+  color: $black;
+  background: white;
+}
+
+h1 {
+@include newStyle;
+}
+
+body {
+  background-color: $yellow;
+}

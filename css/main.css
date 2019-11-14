@@ -73,7 +73,7 @@ h1 {
 }
 
 #branding {
-  margin: 3em;
+  margin: 2em;
 }
 
 h2 {
@@ -202,7 +202,7 @@ img {
 }
 
 #elements {
-  margin: 3em;
+  margin: 2em;
 }
 
 code {
@@ -255,7 +255,7 @@ code {
 }
 
 #combined {
-  margin: 3em;
+  margin: 2em;
 }
 
 @media screen and (min-width: 35em) {
@@ -320,6 +320,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0.5em;
+  text-decoration: none;
 }
 
 .icon {
@@ -335,6 +336,21 @@ footer {
   .color-palette {
     max-width: 20%;
     margin: 4%;
+  }
+
+  #branding {
+    margin: 10em;
+    margin-top: 0;
+  }
+
+  #elements {
+    margin: 10em;
+    margin-top: 0;
+  }
+
+  #combined {
+    margin: 10em;
+    margin-top: 0;
   }
 
 
