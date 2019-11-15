@@ -2,20 +2,20 @@
 
 .work-grid {
   display: flex;
-  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   justify-content: center;
 }
 
 .work-col {
-  flex:50%;
-  max-width: 35%;
-  margin:0.25em;
+  max-width: 75%;
 }
 
 .project-thumbnail {
   width:100%;
   transition-duration: 1s;
-  margin:0.25em;
+  margin:0.5em;
 }
 
 /* ------------------------------ WORK 0n STYLING --------------------------- */
@@ -118,17 +118,59 @@ h2 {
 
 @media screen and (min-width: 35em) {
 
+  .work-grid {
+    flex-direction: column;
+  }
+
+  .work-col {
+    max-width:90%;
+    display:flex;
+    flex-direction: row;
+    margin:0.25em;
+  }
+
+  .project-thumbnail {
+    width:90%;
+    transition-duration: 1s;
+    margin:0.5em;
+  }
+
   .video-container {
     margin: 1em;
   }
 }
 
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 55em) {
   .work-grid {
-    width: 75%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
     justify-content: center;
-    margin-left: 12.5%;
+  }
+
+  .work-col {
+    display:flex;
+    flex-direction: column;
+    width:25%;
+    margin:1em;
+    padding:0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-thumbnail {
+    width:100%;
+    transition-duration: 1s;
+    margin:1em;
+    padding:0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .work-desc {
@@ -152,11 +194,4 @@ h2 {
     padding: 0 0 32.5% 0;
   }
 
-}
-
-@media screen and (min-width: 80em) {
-
-  .info {
-    flex-direction: row;
-  }
 }
