@@ -52,8 +52,8 @@ iframe {
 h2 {
   color: #7B8C00;
   text-decoration: none;
-  margin-top: 3em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 .about-me {
@@ -69,9 +69,10 @@ h2 {
 
 .title {
   order: 0;
-  font-size: 4em;
+  font-size: 3em;
   margin:0;
   padding:0;
+  margin-top:1em;
 }
 
 .desc {
@@ -140,6 +141,7 @@ h2 {
     }
 
     .featured-grid {
+      width:100%;
       margin:0;
       padding:0;
     }
@@ -152,6 +154,8 @@ h2 {
     }
 
     .project-thumbnail {
+      flex:1;
+      width:90%;
       margin:0;
       padding:0;
     }
@@ -175,6 +179,7 @@ h2 {
       text-align: left;
       margin:0;
       padding:0;
+      font-size: 4em;
     }
 
     .desc {
