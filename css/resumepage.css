@@ -1,5 +1,13 @@
 /* --------------------------- ABOUT PAGE STYLING --------------------------- */
 
+.pre-resume {
+  font-size: 0.9em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -36,6 +44,11 @@
   margin-top: 1em;
 }
 
+.contact-info{
+  text-decoration: none;
+  color: #757575;
+}
+
 .contact-item {
   display: flex;
   flex-direction: row;
@@ -47,6 +60,55 @@
   width: 3em;
   height: 3em;
   margin-right: 0.5em;
+}
+
+.content {
+  display:flex;
+  flex-direction: column;
+}
+
+.extra {
+  order:1;
+}
+
+.work-experience {
+  order: 0;
+  margin: 2em;
+  max-width: 40em;
+}
+
+.experience-item {
+  margin-top: 5em;
+}
+
+.first {
+  margin-top: 2em;
+}
+
+.date {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+.job-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+}
+
+.job-title {
+  flex:1;
+}
+
+.divider {
+  margin-left: 0.5em;
+  margin-right: 2em;
+}
+
+.company {
+  flex:1;
 }
 
 h2 {
@@ -67,12 +129,15 @@ h2 {
 .education {
   display: flex;
   flex-direction: column;
+  margin: 2em;
 }
 
 .skills-item {
   display: flex;
   flex-direction: row;
+  text-align: left;
   align-items: center;
+  justify-content: center;
 }
 
 .skills-icon {
@@ -95,12 +160,20 @@ table {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 2em;
+  margin-top: 3em;
 }
 
 .interests-icon {
   width: 3em;
   height: 3em;
+}
+
+.post-resume {
+  font-size: 0.9em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5em;
 }
 
 @media screen and (min-width: 40em) {
@@ -162,6 +235,21 @@ table {
     width: 2em;
     height: 2em;
     margin-right: 0.5em;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .extra {
+    flex:1;
+    order:0;
+  }
+
+  .work-experience {
+    flex:1;
+    order:1;
   }
 
 }
@@ -229,4 +317,27 @@ table {
     height: 2em;
     margin-right: 0.5em;
   }
+
+  .content {
+    margin-top: 1em;
+  }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .extra {
+    flex:1;
+    margin-right: 5em;
+    margin-left: 5em;
+  }
+
+  .work-experience {
+    flex:3;
+  }
+
+  .work-experience {
+    margin-right: 5em;
+  }
+
 }
