@@ -1,39 +1,232 @@
 /* --------------------------- ABOUT PAGE STYLING --------------------------- */
 
-.about-me-container {
-  display:flex;
-  margin: 3em;
-  margin-top: 0;
+.header {
+  display: flex;
   flex-direction: column;
+  margin: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  max-width: 20em;
+  margin-bottom: 0.5em;
+}
+
+.header-title {
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+.desc {
+  color: #7B8C00;
+  font-style: italic;
+  font-size: 1em;
+  margin: 3em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 25%;
+  margin-top: 1em;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+h2 {
+  color: #7B8C00;
+  text-decoration: none;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.title {
+  order: 0;
+  font-size: 2em;
+  margin:0;
+  padding:0;
+  margin-top:1em;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skills-icon {
+  width: 3em;
+  height: 3em;
+  margin-right: 1em;
+}
+
+table {
+  width:100%;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.profile-picture {
-  flex:1;
-  width:70%;
+
+.interests-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
 }
 
-.desc {
-  flex:1;
-  text-align: left;
+.interests-icon {
+  width: 3em;
+  height: 3em;
 }
 
 @media screen and (min-width: 40em) {
-
-  .about-me-container {
+  .header {
     flex-direction: row;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
   }
 
-  .profile-picture {
+  .photo {
     flex:1;
-    width:50%;
-    max-width: 30em;
+    max-width: 20em;
+    margin: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  .info {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+
+  .header-title {
+    order:0;
+    margin:0;
+    padding:0;
+    text-align: left;
   }
 
   .desc {
+    order:2;
+    color: #7B8C00;
+    font-style: italic;
+    font-size: 1em;
+    margin: 0;
+    margin-top: 2em;
+  }
+
+  .contact {
+    display: flex;
+    order:1;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .contact-icon {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+  }
+
+}
+
+@media screen and (min-width: 60em) {
+  .header {
+    flex-direction: row;
+    margin: 15%;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo {
+    flex:1;
+    margin: 0.5em;
+    margin-bottom: 0;
+    min-width: 10em;
+  }
+
+  .info {
+    flex:2;
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+  .header-title {
+    order:0;
+    margin:0;
+    padding:0;
+    text-align: left;
+  }
+
+  .desc {
+    order:1;
+    color: #7B8C00;
+    font-style: italic;
+    font-size: 1em;
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
     max-width: 40em;
   }
 
+  .contact {
+    display: flex;
+    order:2;
+    flex-direction: row;
+    align-items: left;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    align-items: center;
+    margin-right: 0.5em;
+  }
+
+  .contact-icon {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+  }
 }
