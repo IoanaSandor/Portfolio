@@ -24,18 +24,25 @@
 </head>
 
 <body>
+  <script type="text/javascript" src="js/button.js"></script>
 
   <header>
+
+    <div class = "head">
+      <img class="light" id = "light"src="img/icons/off.png" onclick="changeColor()">
+      <p class="dim" id="dim" onclick="changeColor()">dim the lights</p>
+    </div>
 
     <h1>ioana sandor</h1>
 
     <ul>
-      <li><a class="navigation" href="index.html">home</a></li>
+      <li><a class="navigation" href="index.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">home</a></li>
       <li><p class="nav-div"> | </p></li>
-      <li><a class="navigation" href="work.html">work</a></li>
+      <li><a class="navigation" href="work.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">work</a></li>
       <li><p class="nav-div"> | </p></li>
-      <li><a class="navigation" href="resume.html">resume</a></li>
+      <li><a class="navigation" href="resume.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">resume</a></li>
     </ul>
+
 
   </header>
 
@@ -43,7 +50,7 @@
     <div class="video-container">
       <iframe src="https://player.vimeo.com/video/370461548?color=FF8500&title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div> <br>
-    <a class="details" href="work.html">More Details</a>
+    <a class="details" href="work.html" onmouseover="onHover_button(this)" onmouseout="offHover_button(this)">More Details</a>
    </div>
 
   <h2>featured work</h2>

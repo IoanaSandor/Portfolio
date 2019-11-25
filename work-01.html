@@ -23,17 +23,23 @@
 </head>
 
 <body>
+  <script type="text/javascript" src="js/button.js"></script>
 
   <header>
 
-    <h1>bb8 animation</h1>
+    <div class = "head">
+      <img class="light" id = "light"src="img/icons/off.png" onclick="changeColor()">
+      <p class="dim" id="dim" onclick="changeColor()">dim the lights</p>
+    </div>
+
+    <h1>bb8</h1>
 
     <ul>
-      <li><a class="navigation" href="index.html">home</a></li>
+      <li><a class="navigation" href="index.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">home</a></li>
       <li><p class="nav-div"> | </p></li>
-      <li><a class="navigation" href="work.html">work</a></li>
+      <li><a class="navigation" href="work.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">work</a></li>
       <li><p class="nav-div"> | </p></li>
-      <li><a class="navigation" href="resume.html">resume</a></li>
+      <li><a class="navigation" href="resume.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">resume</a></li>
     </ul>
 
   </header>
