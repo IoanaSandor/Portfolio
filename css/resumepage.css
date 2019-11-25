@@ -21,6 +21,10 @@
   margin-bottom: 0.5em;
 }
 
+.profile-picture {
+  width: 10em;
+}
+
 .header-title {
   margin:0;
   padding:0;
@@ -192,6 +196,10 @@ table {
     margin-bottom: 0;
   }
 
+  .profile-picture {
+    width: 100%;
+  }
+
   .info {
     flex:1;
     display:flex;
@@ -268,6 +276,10 @@ table {
     margin: 0.5em;
     margin-bottom: 0;
     min-width: 10em;
+  }
+
+  .profile-picture {
+    width: 100%;
   }
 
   .info {
