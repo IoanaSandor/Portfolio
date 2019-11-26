@@ -66,6 +66,9 @@ li {
 
 .navigation:hover, .navigation:focus, .navigation:active {
   color: #C9C937;
+  background: transparent;
+  outline: none;
+  border: none;
 }
 
 header {
@@ -319,6 +322,7 @@ footer {
   justify-content: center;
   width:100%;
   height:100%;
+  padding-bottom: 2em;
 }
 
 .social-media-title {
@@ -337,7 +341,6 @@ footer {
 }
 
 .social-media-item {
-  width:25%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -346,7 +349,7 @@ footer {
 }
 
 .icon {
-  width: 4em;
+  width: 3.5em;
   height: auto;
 }
 
