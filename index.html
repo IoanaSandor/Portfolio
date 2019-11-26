@@ -25,6 +25,18 @@
 
 <body>
   <script type="text/javascript" src="js/button.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      var move = 0;
+      setInterval(function(){
+        move+=1;
+        $('body').css('background-position-y', move + 'px');
+      }, 100)
+    })
+  </script>
+
+
 
   <header>
 
