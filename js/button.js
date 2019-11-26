@@ -7,6 +7,7 @@
   var titles = document.getElementsByTagName("H2");
   var body_copy = document.getElementsByTagName("P");
   var footer = document.getElementsByTagName("FOOTER");
+  var body = document.getElementsByTagName("BODY");
   //Variables of objects by class
   var nagivation = document.getElementsByClassName("navigation");
   var nav_div = document.getElementsByClassName("nav-div");
@@ -64,9 +65,12 @@
       }
 
 
+
+
       //Single elements color change
       main_title[0].style.color = "#FD6826";
       footer[0].style.backgroundColor = "#0F373F";
+      body[0].style.backgroundImage = "url('img/doodles/dark_doodles.png')";
 
       //Changes the light bulb icon
       document.getElementById("light").src = "img/icons/on.png";
@@ -127,6 +131,7 @@
       //Single elements color change
       main_title[0].style.color = "#E45F00";
       footer[0].style.backgroundColor = "#7B8C00";
+      body[0].style.backgroundImage = "url('img/doodles/light_doodles.png')";
 
       //Changes the light bulb icon
       document.getElementById("light").src = "img/icons/off.png";

@@ -1,18 +1,22 @@
 /* ------------------------------- MAIN STYLING ----------------------------- */
 
 html {
-   margin: 0px;
+   margin: 0;
    height: 100%;
    width: 100%;
 }
 
 body {
   background-color: white;
-  margin: 0px;
-  min-height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
   color: #757575;
+  width:100%;
+  height: 35vh;
+  background-image: url("../img/doodles/light_doodles.png");
+  background-size: 60em;
+  background-position: top, bottom, right;
 }
 
 .head {
