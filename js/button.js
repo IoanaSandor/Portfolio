@@ -14,6 +14,9 @@
   var contact_info = document.getElementsByClassName("contact-info");
   var job_title = document.getElementsByClassName("job-title");
   var details_button = document.getElementsByClassName("details");
+  var desc = document.getElementsByClassName("desc");
+  var post = document.getElementsByClassName("post-resume");
+  var pre = document.getElementsByClassName("pre-resume");
 
   //Function to change color scheme
   function changeColor() {
@@ -43,6 +46,7 @@
       var l = 0;
       while (l < body_copy.length){
         body_copy[l].style.color = "white";
+        body_copy[l].style.backgroundColor = "#001D21";
         l++;
       }
 
@@ -60,12 +64,27 @@
 
       var o = 0;
       while (o < details_button.length){
-        details_button[0].style.backgroundColor = "#558889";
+        details_button[o].style.backgroundColor = "#558889";
         o++;
       }
 
+      var p = 0;
+      while (p < desc.length){
+        desc[p].style.backgroundColor = "#001D21";
+        p++;
+      }
 
+      var q = 0;
+      while (q < post.length){
+        post[q].style.backgroundColor = "transparent";
+        q++;
+      }
 
+      var r = 0;
+      while (r < pre.length){
+        pre[r].style.backgroundColor = "transparent";
+        r++;
+      }
 
       //Single elements color change
       main_title[0].style.color = "#FD6826";
@@ -100,6 +119,7 @@
       var l = 0;
       while (l < body_copy.length){
         body_copy[l].style.color = "#757575";
+        body_copy[l].style.backgroundColor = "white";
         l++;
       }
 
@@ -124,8 +144,26 @@
 
       var o = 0;
       while (o < details_button.length){
-        details_button[0].style.backgroundColor = "#E45F00";
+        details_button[o].style.backgroundColor = "#E45F00";
         o++;
+      }
+
+      var p = 0;
+      while (p < desc.length){
+        desc[p].style.backgroundColor = "white";
+        p++;
+      }
+
+      var q = 0;
+      while (q < post.length){
+        post[q].style.backgroundColor = "transparent";
+        q++;
+      }
+
+      var r = 0;
+      while (r < pre.length){
+        pre[r].style.backgroundColor = "transparent";
+        r++;
       }
 
       //Single elements color change

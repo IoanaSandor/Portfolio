@@ -1,5 +1,9 @@
 /* ------------------------------- WORK STYLING ----------------------------- */
 
+p {
+  background-color: white;
+}
+
 .work-grid {
   display: flex;
   flex-direction: column;

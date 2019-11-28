@@ -1,11 +1,16 @@
 /* --------------------------- ABOUT PAGE STYLING --------------------------- */
 
+p {
+  background-color: white;
+}
+
 .pre-resume {
   font-size: 0.9em;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin-bottom: 5em;
+  background-color: transparent;
 }
 
 .header {
@@ -39,6 +44,7 @@
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
 
 .contact {
   display: flex;
@@ -178,6 +184,7 @@ table {
   justify-content: center;
   text-align: center;
   margin-top: 5em;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 40em) {

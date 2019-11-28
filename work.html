@@ -23,8 +23,11 @@
 </head>
 
 <body>
+  <!-- These lines import javascript files -->
   <script type="text/javascript" src="js/button.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- This is script that uses the imported code above. It is rquired to be in the same document to work -->
+  <!-- This function moves the background images down along the y axis -->
   <script type="text/javascript">
     $(function(){
       var move = 0;
@@ -37,13 +40,16 @@
 
   <header>
 
+    <!-- Creating the Light Buld that uses the changeColor() function to change the light and dark theme -->
     <div class = "head">
-      <img class="light" id = "light"src="img/icons/off.png" onclick="changeColor()">
+      <img class="light" id = "light" src="img/icons/off.png" onclick="changeColor()" title="Light" alt="A light bulb">
       <p class="dim" id="dim" onclick="changeColor()">dim the lights</p>
     </div>
 
+    <!-- Title of the page -->
     <h1>my work</h1>
 
+    <!-- Navigation menu -->
     <ul>
       <li><a class="navigation" href="index.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">home</a></li>
       <li><p class="nav-div"> | </p></li>
@@ -54,43 +60,46 @@
 
   </header>
 
+  <!-- Featured work section for all projects in Animation Reel -->
   <div class="work-grid">
     <div class="work-col">
+      <!-- Project 01 -->
       <a href="work-01.html">
         <img class="project-thumbnail" src="img/bb8/thumbnail.png" title="BB8 Animation" alt="A BB8 Cupcake in front of a teal background">
       </a>
+      <!-- Project 02 -->
       <a href="work-02.html">
         <img class="project-thumbnail" src="img/safety_videos/thumbnail.png" title="Safety Videos" alt="A 3D model of an adult male">
       </a>
     </div>
     <div class="work-col">
-      <a href="work-03.html">
-        <img class="project-thumbnail" src="img/mood_board/mood_10.jpg" title="Orange Clock" alt="A clock made out of an orange">
-      </a>
-      <a href="work-04.html">
-        <img class="project-thumbnail" src="img/mood_board/mood_13.jpg" title="Goldfish in Jello" alt="A pair of goldfish stuck in yellow jello">
-      </a>
+      <!-- Project 03 -->
+      <img class="project-thumbnail dark" src="img/mood_board/mood_10.jpg" title="Orange Clock" alt="A clock made out of an orange">
+      <!-- Project 04 -->
+      <img class="project-thumbnail dark" src="img/mood_board/mood_13.jpg" title="Goldfish in Jello" alt="A pair of goldfish stuck in yellow jello">
     </div>
     <div class="work-col">
-      <a href="work-03.html">
-        <img class="project-thumbnail" src="img/mood_board/mood_10.jpg" title="Orange Clock" alt="A clock made out of an orange">
-      </a>
-      <a href="work-04.html">
-        <img class="project-thumbnail" src="img/mood_board/mood_13.jpg" title="Goldfish in Jello" alt="A pair of goldfish stuck in yellow jello">
-      </a>
+      <!-- Project 05 -->
+      <img class="project-thumbnail dark" src="img/mood_board/mood_10.jpg" title="Orange Clock" alt="A clock made out of an orange">
+      <!-- Project 06 -->
+      <img class="project-thumbnail dark" src="img/mood_board/mood_13.jpg" title="Goldfish in Jello" alt="A pair of goldfish stuck in yellow jello">
     </div>
   </div>
-  <br><br>
+
+  <br>
+
+  <!-- Video Container for Animation Reel -->
   <div class="intro-container">
     <h2>animation reel</h2>
     <div class="video-container">
-      <iframe src="https://player.vimeo.com/video/370461548?color=FF8500&title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/370461548?color=FF8500&title=0&byline=0&portrait=0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
    </div>
 
   <br>
   <br>
 
+  <!-- Footer -->
   <footer>
     <h3 class="social-media-title">you can find me here:</h3>
     <div class="test">

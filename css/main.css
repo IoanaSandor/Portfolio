@@ -19,6 +19,10 @@ body {
   background-position: top, bottom, right;
 }
 
+iframe {
+ border:0;
+}
+
 .head {
   width: 100%
 }
@@ -251,6 +255,10 @@ code {
 }
 
 .project-thumbnail:hover, .project-thumbnail:focus, .project-thumbnail:active {
+  filter: brightness(50%);
+}
+
+.dark {
   filter: brightness(50%);
 }
 

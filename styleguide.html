@@ -1,4 +1,4 @@
-<!--/////////////////////////// STYLEGUIDE ///////////////////////////////////-->
+<!--/////////////////////////// STYLEGUIDE //////////////////////////////////-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,10 +23,27 @@
 
 <body>
 
+  <!-- These lines import javascript files -->
+  <script type="text/javascript" src="js/button.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- This is script that uses the imported code above. It is rquired to be in the same document to work -->
+  <!-- This function moves the background images down along the y axis -->
+  <script type="text/javascript">
+    $(function(){
+      var move = 0;
+      setInterval(function(){
+        move+=1;
+        $('body').css('background-position-y', move + 'px');
+      }, 100)
+    })
+  </script>
+
   <header>
 
+    <!-- Title of the page -->
     <h1>style guide</h1>
 
+    <!-- Navigation menu -->
     <ul>
       <li><a class="navigation" href="index.html">home</a></li>
       <li><p class="nav-div"> | </p></li>
@@ -231,6 +248,24 @@
 
   </section>
 
+  <section id="citations">
+
+    <h2>Citations</h2>
+      <ol>
+        <li>W3Schools. Web Developper Site. 2019. <strong>HTML DOM getElementsByClassName() Method [Code]</strong>. Retrieved from <a href="https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp" target="_blank">here</a></li>
+        <li>W3Schools. Web Developper Site. 2019. <strong>JavaScript HTML DOM - Changing HTML [Code]</strong>. Retrieved from <a href="https://www.w3schools.com/js/js_htmldom_html.asp" target="_blank">here</a></li>
+        <li>W3Schools. Web Developper Site. 2019. <strong>onmouseover Event [Code]</strong>. Retrieved from <a href="https://www.w3schools.com/jsref/event_onmouseover.asp" target="_blank">here</a></li>
+        <li>W3Schools. Web Developper Site. 2019. <strong>Style borderColor Property [Code]</strong>. Retrieved from <a href=" https://www.w3schools.com/jsref/prop_style_bordercolor.asp" target="_blank">here</a></li>
+        <li>The jQuery Foundation. Web Developper Site. 2019. <strong>Moving Background Images [Code]</strong>. Retrieved from <a href="https://code.jquery.com/" target="_blank">here</a></li>
+        <li>YouTube. Video Hosting Site. 2019. <strong>Moving Background Animation Effects Using Html CSS And Javascript [Video]</strong>. Retrieved from  <a href="https://www.youtube.com/watch?v=acXIbCD6Z-U" target="_blank">here</a></li>
+        <li>StackOverFlow. Web Developper Site. 2019. <strong>Going Back a Directory [Code]</strong>. Retrieved from  <a href="  https://stackoverflow.com/questions/4862231/links-not-going-back-a-directory" target="_blank">here</a></li>
+        <li>Elegant Themes. Web Developper Site. 2019. <strong>Telephone Links: How to Add “Call-able” Links & CTA’s to Your Website [Code]</strong>. Retrieved from <a href="https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number" target="_blank">here</a></li>
+        <li>W3Schools. Web Developper Site. 2019. <strong>CSS background-image Property [Code]</strong>. Retrieved from <a href="https://www.w3schools.com/cssref/pr_background-image.asp" target="_blank">here</a></li>
+        <li>W3Schools. Web Developper Site. 2019. <strong>Style backgroundImage Property [Code]</strong>. Retrieved from <a href="    https://www.w3schools.com/jsref/prop_style_backgroundimage.asp" target="_blank">here</a></li>
+        <li>W3Schools. Web Developper Site. 2019. <strong>CSS background-image Property [Code]</strong>. Retrieved from <a href="https://www.w3schools.com/cssref/pr_background-image.asp" target="_blank">here</a></li>
+      </ol>
+    </section>
+
   <footer>
     <h3 class="social-media-title">you can find me here:</h3>
     <div class="test">
@@ -250,23 +285,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- Resources
-
-  https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp
-  https://www.w3schools.com/js/js_htmldom_html.asp
-  https://www.w3schools.com/jsref/event_onmouseover.asp
-  https://www.w3schools.com/jsref/prop_style_bordercolor.asp
-  https://code.jquery.com/
-  https://www.youtube.com/watch?v=acXIbCD6Z-U
-  https://www.w3schools.com/cssref/pr_background-image.asp
-  https://stackoverflow.com/questions/4862231/links-not-going-back-a-directory
-  https://www.w3schools.com/jsref/prop_style_backgroundimage.asp
-  https://www.w3schools.com/jsref/prop_style_backgroundimage.asp
-  https://www.w3schools.com/cssref/pr_background-image.asp
-  https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number -->
-
-
-
 
 </body>
