@@ -1,4 +1,46 @@
 /* ---------------------------- HOME PAGE STYLING --------------------------- */
+.doodle {
+  width:10%;
+  height:auto;
+  /* Places the doodles behind all the other elements */
+  z-index:-1;
+  animation: drift 60s linear infinite;
+}
+
+.first-col {
+  /* Positioning the doodles */
+  position:absolute;
+  left:10%;
+  top:10%;
+}
+
+.second-col {
+  /* Positioning the doodles */
+  position:absolute;
+  left:35%;
+}
+
+.third-col {
+  /* Positioning the doodles */
+  position:absolute;
+  left:60%;
+  top:10%;
+}
+
+.fourth-col {
+  /* Positioning the doodles */
+  position:absolute;
+  left:85%;
+}
+
+@keyframes drift {
+from{transform: translateY(-2000px);}
+to {transform: translateY(200em);}
+}
+
+ul {
+  background-color: white;
+}
 
 .intro-container {
   text-align: center;
@@ -65,6 +107,7 @@ h2 {
   margin: 5em;
   margin-top: 0;
   margin-bottom: 0;
+  background-color: white;
 }
 
 .title {
@@ -86,6 +129,7 @@ h2 {
   margin: 2em;
   order: 1;
 }
+
 
 @media screen and (min-width: 40em) {
 
