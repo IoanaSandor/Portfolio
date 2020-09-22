@@ -1,0 +1,140 @@
+<!--////////////////////////// WORK 01 PAGE /////////////////////////////////-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- charset used for character encoding -->
+  <meta charset="utf-8">
+  <!-- content, and initial-scale used for mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vanilla Walk</title>
+
+  <!-- Style sheet links -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/workpage.css" rel="stylesheet">
+
+  <!-- These two lines import the fonts from google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- These lines import javascript files -->
+  <script type="text/javascript" src="js/button.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- This is script that uses the imported code above. It is rquired to be in the same document to work -->
+  <!-- This function moves the background images down along the y axis -->
+  <script type="text/javascript">
+    $(function(){
+      var move = 0;
+      setInterval(function(){
+        move+=1;
+        $('body').css('background-position-y', move + 'px');
+      }, 100)
+    })
+  </script>
+
+  <header>
+
+    <!-- Creating the Light Buld that uses the changeColor() function to change the light and dark theme -->
+    <div class = "head">
+      <img class="light" id = "light" src="img/icons/off.png" onclick="changeColor()" title="Light" alt="A light bulb">
+      <p class="dim" id="dim" onclick="changeColor()">turn off the lights</p>
+    </div>
+
+    <!-- Title of the page -->
+    <h1>vanilla walk</h1>
+
+    <!-- Navigation menu -->
+    <ul>
+      <li><a class="navigation" href="index.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">home</a></li>
+      <li><p class="nav-div"> | </p></li>
+      <li><a class="navigation" href="work.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">work</a></li>
+      <li><p class="nav-div"> | </p></li>
+      <li><a class="navigation" href="resume.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">resume</a></li>
+    </ul>
+
+  </header>
+
+  <!-- Video Container for Animation Reel -->
+  <div class="intro-container">
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/383363404"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <!-- Summary -->
+    <div class="work-desc">
+      <div class="specs">
+        <p><b>Type:</b> Animation Mentor Assignment<br><br>
+            <b>Role:</b> Ideation, Planning, Animating, Rendering <br><br>
+            <b>Tools:</b> Maya, Premiere Pro</p>
+      </div>
+      <p class="nav-div mini"> | </p>
+      <div class="summary">
+        <p> I was tasked with animating a walk cycle. At first I wanted to do something a little crazier, but my mentor suggested that starting with a basic vanilla walk might be better for building a strong foundation in mechanics.</p>
+      </div>
+    </div>
+   </div>
+
+   <!-- Process -->
+   <h2>process</h2>
+   <div class="info">
+     <p class="process-desc">First, I recorded some video reference that I used to help me plan out my animation. I used SyncSketch in order to create notes and annotations on my video directly.</p><br>
+     <img class="process-img" src="img/vanilla_walk/vanilla_walk_reference.gif" title="Vanilla Walk Video Reference" alt="A video of a woman walking normally from the front and side angles">
+  </div>
+  <div class="info">
+    <p class="process-desc">Then, I started blocking out my key poses and breakdowns from 3 different angles to make sure everything was working properly. We needed to animate two full cycles so I set my curves to repeat once I finished a full cycle.</p><br>
+    <img class="process-img" src="img/vanilla_walk/blocking_front.gif" title="Vanilla Walk Blocking Front" alt="A blocking pass from the front">
+    <img class="process-img" src="img/vanilla_walk/blocking_side.gif" title="Vanilla Walk Blocking Side" alt="A blocking pass from the side">
+    <img class="process-img" src="img/vanilla_walk/blocking_persp.gif" title="Vanilla Walk Blocking Perspective" alt="A blocking pass from the perspective view">
+  </div>
+  <div class="info">
+    <p class="process-desc">Next, I moved into spline. I wanted to focus on the legs and the hips so I hid the arms. During this process I encountered knee pops and could not figure out why my steps felt so soft.</p><br>
+    <img class="process-img" src="img/vanilla_walk/rough_spline_front.gif" title="Vanilla Walk Rough Spline Front" alt="A rough spline pass from the front">
+    <img class="process-img" src="img/vanilla_walk/rough_spline_side.gif" title="Vanilla Walk Rough Spline Side" alt="A rough spline pass from the Side">
+  </div>
+  <div class="info">
+    <p class="process-desc">After that was done, I added the arms back in a also polished them.</p><br>
+    <img class="process-img" src="img/vanilla_walk/arms_spline_front.gif" title="Vanilla Walk Polished Spline Front" alt="A polished spline pass from the front">
+    <img class="process-img" src="img/vanilla_walk/arms_spline_side.gif" title="Vanilla Walk Polished Spline Side" alt="A polished spline pass from the Side">
+  </div>
+  <div class="info">
+    <p class="process-desc">At this polish stage I realised why my knee pops were happening and how to fix the soft-ness of my steps. I needed to take less frames to bring the foot down after the contact pose and also that the knee pops were caused by too much variation in height.</p><br>
+    <img class="process-img" src="img/vanilla_walk/polished_front.gif" title="Vanilla Walk Polished Front" alt="A polished spline pass from the front">
+    <img class="process-img" src="img/vanilla_walk/polished_side.gif" title="Vanilla Walk Polished Side" alt="A polished spline pass from the side">
+  </div>
+
+<h2>final thoughts</h2>
+<div class="info">
+  <p class="process-desc">I am happy with the final product. I think I learned a lot about all the different moving parts in a walk and how the weight shifts from not only side to side, but also up and down.</p>
+ </div>
+
+  <br>
+  <br>
+
+  <!-- Footer -->
+  <footer>
+    <h3 class="social-media-title">you can find me here:</h3>
+    <div class="test">
+      <div class="social-media">
+        <a href="mailto:ioanasandor1996@gmail.com" class="social-media-item">
+          <img class="icon" src="img/icons/email_trans.png" title="Email" alt="An Email icon">
+        </a>
+        <a href="https://twitter.com/iguanasauruss" class="social-media-item">
+          <img class="icon" src="img/icons/twitter_trans.png" title="Twitter" alt="A Twitter icon">
+        </a>
+        <a href="https://www.instagram.com/ioanasandor/?hl=en" class="social-media-item">
+          <img class="icon" src="img/icons/insta_trans.png" title="Instagram" alt="An Instagram icon">
+        </a>
+        <a href="https://www.facebook.com/ioana.sandor.54?ref=bookmarks" class="social-media-item">
+          <img class="icon" src="img/icons/facebook_trans.png" title="Facebook" alt="A Facebook icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>

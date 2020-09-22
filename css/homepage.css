@@ -38,14 +38,20 @@ iframe {
 }
 
 .featured-col {
-  width: 60%;
-  margin:0.25em;
+  width: 75%;
+
 }
 
 .project-thumbnail {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   width:100%;
   transition-duration: 1s;
-  margin:0.25em;
+  margin: 0em;
+  padding: 0em;
+  margin-bottom:1em;
+  margin-top: 1em;
 }
 
 h2 {
@@ -90,54 +96,9 @@ h2 {
 @media screen and (min-width: 40em) {
 
   .video-container {
-    margin: 1em;
-  }
-
-  .featured-grid {
-    flex-direction: row;
-  }
-
-  .featured-col {
-    width: 40%;
-    margin:0.5em;
-  }
-
-  .project-thumbnail {
-    margin:0.5em;
-  }
-
-  .about-me{
-    flex-direction: row;
-    margin: 5em;
-  }
-
-  .profile-picture {
-    flex:1;
-    width:25%;
-    margin:0;
-    padding:0;
-    order:0;
-    margin-right: 3em;
-  }
-
-  .title {
-    text-align: left;
-    margin:0;
-    padding:0;
-  }
-
-  .writing {
-    flex:1;
-    width:75%;
-  }
-
-}
-
-@media screen and (min-width: 55em) {
-
-  .video-container {
-    margin-top: 0;
-    padding: 0 0 32.5% 0;
+    margin: 6em;
+    margin-top: 0em;
+    margin-bottom: 1em;
   }
 
   .featured-grid {
@@ -147,6 +108,7 @@ h2 {
   }
 
   .featured-col {
+    width:95%;
     display: flex;
     flex-direction: row;
     margin:0;
@@ -160,37 +122,60 @@ h2 {
     padding:0;
   }
 
-  .about-me {
-    margin-left: 15%;
-    margin-right: 15%;
+  .about-me{
+    flex-direction: row;
+    margin: 5em;
   }
 
   .profile-picture {
     flex:1;
-    width:50%;
+    width:25%;
     margin:0;
-    padding:0;
     order:0;
+    margin-left: 0em;
     margin-right: 3em;
-    max-width:400px;
   }
 
   .title {
     text-align: left;
     margin:0;
     padding:0;
-    font-size: 4em;
   }
 
-  .desc {
-    max-width:500px;
+  .writing {
+    flex:1;
+    max-width: 50%;
+  }
+
+}
+
+@media screen and (min-width: 60em) {
+
+  .about-me{
+    flex-direction: row;
+    margin: 5em;
+  }
+
+  .profile-picture {
+    flex:1;
+    width:25%;
+    margin:0;
+    max-height: 30%;
+    max-width: 30%;
+    order:0;
+    margin-left: 5em;
+    margin-right: 3em;
+  }
+
+  .title {
+    text-align: left;
     margin:0;
     padding:0;
   }
 
   .writing {
     flex:1;
-    width:50%;
+    max-width: 25%;
   }
 
 }

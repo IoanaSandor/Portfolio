@@ -93,7 +93,7 @@
 
       //Changes the light bulb icon
       document.getElementById("light").src = "img/icons/on.png";
-      document.getElementById("dim").innerHTML = "brighten the lights";
+      document.getElementById("dim").innerHTML = "turn on the lights";
       document.getElementById("dim").style.color = "#FD9937";
 
       //Set light variable to false to indicate the dark color scheme is active
@@ -173,7 +173,7 @@
 
       //Changes the light bulb icon
       document.getElementById("light").src = "img/icons/off.png";
-      document.getElementById("dim").innerHTML = "dim the lights";
+      document.getElementById("dim").innerHTML = "turn off the lights";
       document.getElementById("dim").style.color = "#757575";
 
       //Set light variable to true to indicate the light color scheme is active

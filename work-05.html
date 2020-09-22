@@ -1,0 +1,138 @@
+<!--////////////////////////// WORK 05 PAGE /////////////////////////////////-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- charset used for character encoding -->
+  <meta charset="utf-8">
+  <!-- content, and initial-scale used for mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Saftey Videos</title>
+
+  <!-- Style sheet links -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/workpage.css" rel="stylesheet">
+
+  <!-- These two lines import the fonts from google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- These lines import javascript files -->
+  <script type="text/javascript" src="js/button.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- This is script that uses the imported code above. It is rquired to be in the same document to work -->
+  <!-- This function moves the background images down along the y axis -->
+  <script type="text/javascript">
+    $(function(){
+      var move = 0;
+      setInterval(function(){
+        move+=1;
+        $('body').css('background-position-y', move + 'px');
+      }, 100)
+    })
+  </script>
+
+  <header>
+
+    <!-- Creating the Light Buld that uses the changeColor() function to change the light and dark theme -->
+    <div class = "head">
+      <img class="light" id = "light" src="img/icons/off.png" onclick="changeColor()" title="Light" alt="A light bulb">
+      <p class="dim" id="dim" onclick="changeColor()">turn off the lights</p>
+    </div>
+
+    <!-- Title of the page -->
+    <h1>saftey videos</h1>
+
+    <!-- Navigation menu -->
+    <ul>
+      <li><a class="navigation" href="index.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">home</a></li>
+      <li><p class="nav-div"> | </p></li>
+      <li><a class="navigation" href="work.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">work</a></li>
+      <li><p class="nav-div"> | </p></li>
+      <li><a class="navigation" href="resume.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">resume</a></li>
+    </ul>
+
+  </header>
+
+  <!-- Video Container for Animation Reel -->
+  <div class="intro-container">
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/383366810"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <!-- Summary -->
+    <div class="work-desc">
+      <div class="specs">
+        <p><b>Type:</b> Co-op Project<br><br>
+            <b>Role:</b> Modeling, Texturing, Rigging, Animating, Lighting, Post Production <br><br>
+            <b>Tools:</b> 3Ds Max, After Effects</p>
+      </div>
+      <p class="nav-div mini"> | </p>
+      <div class="summary">
+        <p>These videos were made to illustrate common accidents that can happen on machines in the factory and encourage factory workers to follow safety procedures. 5 videos were made in total. Below are the three best executed ones. <br><br>
+        I modeled all the parts and the character model, textured, rigged, and animated the models, lit the scenes, rendered, and assembled the renders in post production.</p>
+      </div>
+    </div>
+   </div>
+
+   <!-- Process -->
+   <h2>process</h2>
+   <div class="info">
+     <p class="process-desc">I started by modeling the character model. This was my first time modeling a person so I had to find a lot of anatomical resources. The company provided me with reference photos of a coworker so that I could model the character off of them. </p>
+     <div class="img-row-02">
+       <img class="process-img-03" src="img/safety_videos/reference.png" title="Facial Reference" alt="A 3D model next to a photo reference of an adult male">
+       <img class="process-img-03-1" src="img/safety_videos/body.png" title="Modeled Body" alt="A 3D model of an adult male's body">
+     </div>
+    </div>
+    <div class="info">
+      <p class="process-desc">After getting the character modeled, I textured him, then added bones and controllers.</p>
+      <div class="img-row">
+        <img class="process-img-02" src="img/safety_videos/texture.png" title="Texture" alt="A textured 3D adult male">
+        <img class="process-img-02" src="img/safety_videos/bones.png" title="Bones" alt="A system of bones">
+        <img class="process-img-02" src="img/safety_videos/controller.png" title="Controllers" alt="A complete rig">
+      </div>
+   </div>
+  <div class="info">
+    <p class="process-desc">After that was done, I began animating various videos that were given to me. I modeled the rest of the parts for the videos and made the lighting and environments. There were 5 in total.</p>
+ </div>
+
+<h2>final thoughts</h2>
+<div class="info">
+  <p class="process-desc">Each video presented a new and different challenge for me; however, the hardest part of each film was the rigging and animation of the human character. This was my first time rigging and the moves I required the character to do were too extreme to use IK riggs, so I had to manually key every single bone. A lot of the videos primarily focused on the hands, which had many bones.</p>
+ </div>
+
+ <div class="info">
+   <p class="process-desc">Working with the particle systems for the 5th case video was a lot of fun because at that point I had a much better understanding of how particle systems worked; therefore, I was able to finish the particle system very fast and spend a lot more time adjusting the finer details of it. </p>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Footer -->
+  <footer>
+    <h3 class="social-media-title">you can find me here:</h3>
+    <div class="test">
+      <div class="social-media">
+        <a href="mailto:ioanasandor1996@gmail.com" class="social-media-item">
+          <img class="icon" src="img/icons/email_trans.png" title="Email" alt="An Email icon">
+        </a>
+        <a href="https://twitter.com/iguanasauruss" class="social-media-item">
+          <img class="icon" src="img/icons/twitter_trans.png" title="Twitter" alt="A Twitter icon">
+        </a>
+        <a href="https://www.instagram.com/ioanasandor/?hl=en" class="social-media-item">
+          <img class="icon" src="img/icons/insta_trans.png" title="Instagram" alt="An Instagram icon">
+        </a>
+        <a href="https://www.facebook.com/ioana.sandor.54?ref=bookmarks" class="social-media-item">
+          <img class="icon" src="img/icons/facebook_trans.png" title="Facebook" alt="A Facebook icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
