@@ -24,7 +24,7 @@ iframe {
 }
 
 .head {
-  width: 100%
+  width: 100%;
 }
 
 .light {
@@ -44,11 +44,11 @@ iframe {
 ul {
   display: flex;
   list-style: none;
-  padding:0.5em;
-  padding-top: 0;
-  margin:0.5em;
-  margin-top:0;
+  text-align: center;
   align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-div {
@@ -59,8 +59,8 @@ li {
   list-style: none;
   padding:1em;
   flex:1;
-  padding:0.5em;
-  margin:0.5em;
+  padding:0.15em;
+  margin:0.15em;
 }
 
 .navigation {
@@ -76,11 +76,13 @@ li {
 }
 
 header {
+
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
+  width:100%;
 }
 
 .nav-container {
@@ -293,6 +295,24 @@ code {
 
 @media screen and (min-width: 35em) {
 
+  ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    padding:1em;
+    flex:1;
+    padding:0.5em;
+    margin:0.5em;
+  }
+
   .fonts-desc {
     flex: 3;
   }
@@ -362,6 +382,25 @@ footer {
 }
 
 @media screen and (min-width: 50em) {
+
+  ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    padding:1em;
+    flex:1;
+    padding:0.5em;
+    margin:0.5em;
+  }
+
   .project-thumbnail {
     width:33.33%;
   }
