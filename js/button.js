@@ -3,11 +3,11 @@
   //Variable to check if color scheme is set to light or dark
   var light = true;
   //Variables of objects by tag
-  var main_title = document.getElementsByTagName("H1");
-  var titles = document.getElementsByTagName("H2");
-  var body_copy = document.getElementsByTagName("P");
-  var footer = document.getElementsByTagName("FOOTER");
-  var body = document.getElementsByTagName("BODY");
+  var body = document.getElementsByTagName('body');
+  var main_title = document.getElementsByTagName('h1');
+  var titles = document.getElementsByTagName('h2');
+  var body_copy = document.getElementsByTagName('p');
+  var footer = document.getElementsByTagName('footer');
   //Variables of objects by class
   var nagivation = document.getElementsByClassName("navigation");
   var nav_div = document.getElementsByClassName("nav-div");
@@ -21,72 +21,77 @@
   //Function to change color scheme
   function changeColor() {
     //If the color scheme is set to light
-    if (light==true){
+    if (light == true) {
       //Change the background color
       document.body.style.backgroundColor = "#001D21";
       //Cycle through each element and change the color
       var i = 0;
+      var j = 0;
+      var k = 0;
+      var l = 0;
+      var m = 0;
+      var n = 0;
+      var o = 0;
+      var p = 0;
+      var q = 0;
+      var r = 0;
+
       while (i < titles.length){
         titles[i].style.color = "#FD9937";
         i++;
       }
 
-      var j = 0;
       while (j < nagivation.length){
         nagivation[j].style.color = "white";
         j++;
       }
 
-      var k = 0;
       while (k < nav_div.length){
         nav_div[k].style.color = "white";
         k++;
       }
 
-      var l = 0;
       while (l < body_copy.length){
         body_copy[l].style.color = "white";
         body_copy[l].style.backgroundColor = "#001D21";
         l++;
       }
 
-      var m = 0;
       while (m < contact_info.length){
         contact_info[m].style.color = "#FD9937";
         m++;
       }
 
-      var n = 0;
       while (n < job_title.length){
         job_title[n].style.color = "white";
         n++;
       }
 
-      var o = 0;
       while (o < details_button.length){
         details_button[o].style.backgroundColor = "#558889";
         o++;
       }
 
-      var p = 0;
       while (p < desc.length){
         desc[p].style.backgroundColor = "#001D21";
         p++;
       }
 
-      var q = 0;
       while (q < post.length){
         post[q].style.backgroundColor = "transparent";
         q++;
       }
 
-      var r = 0;
       while (r < pre.length){
         pre[r].style.backgroundColor = "transparent";
         r++;
       }
 
       //Single elements color change
+      console.log(main_title[0]);
+      console.log(footer[0]);
+      console.log(body[0]);
+
       main_title[0].style.color = "#FD6826";
       footer[0].style.backgroundColor = "#0F373F";
       body[0].style.backgroundImage = "url('img/doodles/dark_doodles.png')";
@@ -99,24 +104,37 @@
       //Set light variable to false to indicate the dark color scheme is active
       light = false;
 
+      // Set cookies
+      document.cookie = 'theme=dark';
+      console.log('Cookies are now: ' + document.cookie);
+    }
+
     //If the color scheme is set to dark
-    } else if (light==false) {
+    else {
       //Change the background color
       document.body.style.backgroundColor = "white";
       //Cycle through each element and change the color
       var i = 0;
+      var j = 0;
+      var l = 0;
+      var k = 0;
+      var m = 0;
+      var n = 0;
+      var o = 0;
+      var p = 0;
+      var q = 0;
+      var r = 0;
+      
       while (i < titles.length){
         titles[i].style.color = "#7B8C00";
         i++;
       }
 
-      var j = 0;
       while (j < nagivation.length){
         nagivation[j].style.color = "#7B8C00";
         j++;
       }
 
-      var l = 0;
       while (l < body_copy.length){
         body_copy[l].style.color = "#757575";
         body_copy[l].style.backgroundColor = "white";
@@ -124,43 +142,36 @@
       }
 
       //Had to change order so that when switching color schemes, the body_copy doesn't override the nav_div
-      var k = 0;
       while (k < nav_div.length){
         nav_div[k].style.color = "#7B8C00";
         k++;
       }
 
-      var m = 0;
       while (m < contact_info.length){
         contact_info[m].style.color = "#757575";
         m++;
       }
 
-      var n = 0;
       while (n < job_title.length){
         job_title[n].style.color = "#757575";
         n++;
       }
 
-      var o = 0;
       while (o < details_button.length){
         details_button[o].style.backgroundColor = "#E45F00";
         o++;
       }
 
-      var p = 0;
       while (p < desc.length){
         desc[p].style.backgroundColor = "white";
         p++;
       }
 
-      var q = 0;
       while (q < post.length){
         post[q].style.backgroundColor = "transparent";
         q++;
       }
 
-      var r = 0;
       while (r < pre.length){
         pre[r].style.backgroundColor = "transparent";
         r++;
@@ -178,8 +189,21 @@
 
       //Set light variable to true to indicate the light color scheme is active
       light = true;
+
+      // Set cookies
+      document.cookie = 'theme=light';
+      console.log('Cookies are now: ' + document.cookie);
     }
-  }
+}
+
+function setThemeFromCookie() {
+    console.log('Cookies are now: ' + document.cookie);
+
+    if (document.cookie.match(/theme=dark/i)) {
+        light = true;
+        changeColor();
+    }
+}
 
   //Adding Hover Effects
   //All OnHover Effects

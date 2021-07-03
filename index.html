@@ -4,7 +4,6 @@
 <html lang="en">
 
 <head>
-
   <!-- charset used for character encoding -->
   <meta charset="utf-8">
   <!-- content, and initial-scale used for mobile view -->
@@ -19,13 +18,13 @@
   <!-- These two lines import the fonts from google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
   <!-- These lines import javascript files -->
   <script type="text/javascript" src="js/button.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
   <!-- This is script that uses the imported code above. It is rquired to be in the same document to work -->
   <!-- This function moves the background images down along the y axis -->
   <script type="text/javascript">
@@ -36,13 +35,17 @@
         $('body').css('background-position-y', move + 'px');
       }, 100)
     })
+
+    // Set color mode automatically from cookies.
+    window.addEventListener('load', function() {
+        setThemeFromCookie();
+    })
   </script>
 
   <header>
-
     <!-- Creating the Light Buld that uses the changeColor() function to change the light and dark theme -->
     <div class = "head">
-      <img class="light" id = "light" src="img/icons/off.png" onclick="changeColor()" title="Light" alt="A light bulb">
+      <img class="light" id ="light" src="img/icons/off.png" onclick="changeColor()" title="Light" alt="A light bulb">
       <p class="dim" id="dim" onclick="changeColor()">turn off the lights</p>
     </div>
 
@@ -59,7 +62,6 @@
       <li><p class="nav-div"> | </p></li>
       <li><a class="navigation" href="resume.html" onmouseover="onHover_nav(this)" onmouseout="offHover_nav(this)">resume</a></li>
     </ul>
-
   </header>
 
   <!-- Video Container for Animation Reel -->
@@ -104,8 +106,7 @@
 
   <!-- Footer -->
   <footer>
-    <h3 class="social-media-title">you can find me here:</h3>
-
+      <h3 class="social-media-title">you can find me here:</h3>
       <div class="social-media">
         <a href="mailto:ioana.sandor.contact@gmail.com" class="social-media-item">
           <img class="icon" src="img/icons/email_trans.png" title="Email" alt="An Email icon">
@@ -120,7 +121,5 @@
           <img class="icon" src="img/icons/facebook_trans.png" title="Facebook" alt="A Facebook icon">
         </a>
       </div>
-
-  </footer>
-
+    </footer>
 </body>

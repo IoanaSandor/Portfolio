@@ -36,6 +36,11 @@
         $('body').css('background-position-y', move + 'px');
       }, 100)
     })
+
+    // Set color mode automatically from cookies.
+    window.addEventListener('load', function() {
+        setThemeFromCookie();
+    })
   </script>
 
   <header>
